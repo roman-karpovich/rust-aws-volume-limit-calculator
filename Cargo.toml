@@ -4,5 +4,8 @@ version = "0.1.0"
 edition = "2021"
 description = "copy of https://github.com/awslabs/aws-support-tools/blob/master/EBS/VolumeLimitCalculator/volume_Limit_calculator.sh"
 license = "Apache-2.0"
+homepage = "https://github.com/roman-karpovich/rust-aws-volume-limit-calculator"
+repository = "https://github.com/roman-karpovich/rust-aws-volume-limit-calculator"
+readme = "readme.md"
 
 [dependencies]
