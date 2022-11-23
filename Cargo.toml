@@ -1,0 +1,8 @@
+[package]
+name = "aws_volume_limit_calculator"
+version = "0.1.0"
+edition = "2021"
+description = "copy of https://github.com/awslabs/aws-support-tools/blob/master/EBS/VolumeLimitCalculator/volume_Limit_calculator.sh"
+license = "Apache-2.0"
+
+[dependencies]
