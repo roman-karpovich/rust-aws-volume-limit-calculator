@@ -3,10 +3,21 @@ use std::error::Error;
 
 #[derive(Debug)]
 pub struct Limit {
-    iops: u32,
-    speed: u32,
-    burst_iops: u32,
-    burst_speed: u32,
+    pub iops: u32,
+    pub speed: u32,
+    pub burst_iops: u32,
+    pub burst_speed: u32,
+}
+
+impl Limit {
+    pub fn default() -> Limit {
+        Limit{
+            iops: 0,
+            speed: 0,
+            burst_iops: 0,
+            burst_speed: 0
+        }
+    }
 }
 
 pub fn calculate_gp2_limits(volume_size_gb: u32) -> Result<Limit, Box<dyn Error>> {
